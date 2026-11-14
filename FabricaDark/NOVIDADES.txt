@@ -1,0 +1,49 @@
+ATUALIZAÇÃO AUTOMÁTICA ANTIGRAVITY (v2026.11.13.171500)
+000000. Vinculação 100% Automática das Referências `[01]..[N]` Junto com o Prompt no Chat do DarkPlanner Desktop (Zero Upload Manual — Igual ao Canal `O Estrategista Oculto`):
+   - **Pré-Importação Automática do Pacote de Ingredientes (`01.png..0N.png`) Antes do Chat**:
+     • Antes mesmo de enviar o comando no Chat do DarkPlanner Desktop, a `Fábrica Dark` cria/reutiliza o contêiner do projeto no Creator (`POST /api/projects`), prepara os arquivos numerados limpos (`01.png..0N.png` em `tags_01_a_0N/` e `Downloads/DarkPlanner/ingredients/Refs_<slug>/`), registra o pacote (`POST /api/ingredient-packs` + `/items`) e já importa automaticamente no painel `Ingredientes` do projeto (`POST /api/projects/{id}/ingredients/import-pack`) — sem nenhuma ação manual!
+   - **Tags Nativas `[personagem:01][flow][i][16:9]` & `[ingrediente:02][flow][i][16:9]` Junto do Prompt (Igual ao `O Estrategista Oculto`)**:
+     • Geração automática de `01_TAGS_REFERENCIAS_AUTOMATICAS.txt` e `00_PEDIDO_PRONTO_GUIA_DE_TAGS.txt` (unindo as linhas `[personagem:01]`/`[ingrediente:02]` + as cenas `1:1` do SRT) e inclusão direta no prompt `09_INSTRUCOES_IA_DARKPLANNER.txt`, proibindo o Chat do DarkPlanner de pedir upload manual de imagens locais ou pausar esperando `"pronto"`, enquanto mantém `02_FLOW_PROMPTS.txt` e a timeline `V1` do Studio em sincronia estrita `1:1` (`N` cenas == `N` blocos do SRT).
+00000. Agente Desenvolvedor Antigravity Local no Chat + Entrega Exclusiva da Etapa 7 no `Dark Planner.exe`:
+   - **Chat da `Fábrica Dark` com Acesso Total (Idêntico ao Antigravity)**:
+     • Novo motor autônomo multi-passos (`core/agente_dev_local.py`) integrado ao Chat: ao pedir qualquer mudança no código, na tela, em botões, funções ou correção de bugs, o Agente inspeciona o ambiente ao vivo, pesquisa símbolos, lê e edita arquivos reais (`app.py`, `core/*.py`, `static/*.js`, `static/*.html`, `static/*.css`) com backup automático em `data/backups_agente/`, validação de sintaxe (`ast.parse`/`compile` e `node --check`), hot-reload imediato em memória (`importlib.reload`) e atualização automática da interface!
+   - **Etapa 7 Entregando 100% no `C:\Users\leona\AppData\Local\Programs\darkplanner\Dark Planner.exe` (Nunca no Chat da Fábrica Dark)**:
+     • A Etapa 7 agora minimiza automaticamente o painel `#fd-dp-live-drawer` da `Fábrica Dark` antes de abrir/focar o `Dark Planner.exe`, filtra estritamente alvos CDP (`:5077`/`:5173`/`Fábrica Dark` bloqueados), desbloqueia o foco Win32 (`AttachThreadInput` + `GetForegroundWindow` verificado no PID do `Dark Planner.exe`), grava o clipboard via `powershell -STA` em UTF-8 verificado e garante o enfileiramento imediato das cenas na API `127.0.0.1:7812` caso o `Dark Planner.exe` tenha sido aberto sem porta CDP `9229`.
+0000. Chat Oficial da Automação `Fábrica Dark` (`💬 Chat · Fábrica Dark`) + Correção Instantânea das Etapas 1–6:
+   - O Chat do aplicativo agora atua **100% dentro da nossa automação `Fábrica Dark`**:
+     • Ao digitar `"parar projeto e corrigir erro"`, `"parar projeto"` ou `"corrigir erro"`, a `Fábrica Dark` aborta na hora (`0ms`) qualquer requisição ou etapa girando na tela (`AbortController`), inspeciona os erros reais das Etapas 1–6, recarrega os módulos internos em memória, garante o failover automático (`Gemini → Antigravity → Codex → GPT`) e libera o botão **`▶️ Reexecutar Etapa na Fábrica Dark`** — **sem nunca enviar comandos prematuros para o Chat do DarkPlanner Desktop**!
+     • Análises de canais, ajustes de estrutura/roteiro na mesma conversa e mudanças de formato/estilo/proporção/funções dos vídeos ficam salvos na automação `Fábrica Dark` para que **somente no final (Etapa 7)** todo o pacote pronto seja levado ao Chat do DarkPlanner Desktop.
+   - Corrigido definitivamente o erro `_detectar_modo_video_real() got an unexpected keyword argument 'canal_id'` nas Etapas 1 e 2 + trava automática na esteira para a Etapa 3 nunca rodar se as Etapas 1 ou 2 falharem.
+000. Envio Direto no Chat do DarkPlanner (Etapa 7) + Download 1 Clique:
+   - Retirada a opção de enviar para o DarkPlanner via 2º plano oculto: na Etapa 7 final, o pacote pronto vai **diretamente no próprio Chat do DarkPlanner** (sem nunca fechar o `Dark Planner.exe`).
+   - Botão fixo **`⬇️ Baixar Atualização (.zip)`** na barra lateral esquerda para baixar o pacote completo atualizado com 1 clique.
+00. Canal `GTA à la Une` 100% Focado nos Jogos GTA (Padrão Mano. + Rockstar Mag' + Rou + Vico GTA):
+   - Alinhamento editorial, estrutural, de títulos, thumbnails e cenas 100% em francês (`fr-FR`) aos 3 vídeos oficiais de referência:
+     • Mano. (`https://www.youtube.com/watch?v=8GD39QLKtyY&t=50s` — *Le jeu vidéo a atteint sa limite avec GTA 6*);
+     • Rockstar Mag' (`https://www.youtube.com/watch?v=dPSpuFYoEF8` — *VOILÀ, C'ÉTAIT GTA V.*);
+     • Rou (`https://www.youtube.com/watch?v=I-bJ61bouDo` — *L'incroyable technologie derrière GTA 6* / motor RAGE 9 / 600.000+ animações);
+     • Embalagem francófona de alto CTR inspirada em Vico GTA & G3ADRIEN OFF (*Tout ce qu'il faut savoir avant de jouer à GTA 6*, *GTA 6 fait des choses qu'on n'aurait JAMAIS imaginées dans GTA 5 !*).
+   - Hierarquia estrita de mídias: **Prioridade #1 Absoluta = 100% imagens e vídeos dos JOGOS GTA** (GTA VI Leonida/Vice City, GTA V Los Santos, GTA IV Liberty City, San Andreas, Vice City e motor RAGE com seleção contextual por cena em francês e máscara Fair-Use Anti-Copyright).
+   - O banco de dados local do Disco `D:` (`D:\BANCO DE DADOS`) e os demais bancos externos ficam configurados **somente em último caso, apenas para apoio**.
+   - Referências oficiais sincronizadas diretamente no DarkPlanner Cloud e no banco local do canal `GTA à la Une`.
+0. Correção do Erro na Etapa 7 (`_eh_arquivo_cena_gerada`) + Chat Limpo Auxiliar:
+   - Corrigido escopo global de `_eh_arquivo_cena_gerada`, `_indice_cena_arquivo` e `_buscar_pexels_videos_direto` na Etapa 7 (`conectar_darkplanner`), eliminando 100% do erro `name '_eh_arquivo_cena_gerada' is not defined` e sobras de mídias (`117 de 104`).
+   - Chat (`💬 Chat`) enxuto e limpo: sem repetição de etapas ou logs (que já ficam no painel da direita), funcionando apenas como espaço extra opcional para organizar ideias e enviar instruções.
+1. Vinculação Oficial Antigravity + OpenAI Codex (Conexões e Chaves + Agente no Chat):
+   - Novo painel em `Conexões e chaves` para logar/vincular sua conta Antigravity (OAuth / Token) e OpenAI Codex (`codex login` OAuth / CLI / API Key).
+   - Modo `🤖 Agente Antigravity + Codex` direto no Chat da Fábrica Dark para conversar e aplicar alterações reais em canais, roteiros, pautas, configurações e projetos.
+2. Fim dos Erros de Sobrecarga/Quota do Gemini na Criação de Roteiro e Estrutura:
+   - Rotação inteligente multi-modelo Gemini (`2.5-flash` -> `2.5-flash-lite` -> `2.5-pro` -> `2.0-flash`) com failover automático imediato para `Antigravity Tokens -> OpenAI Codex -> OpenAI GPT`.
+3. Correção Definitiva do Erro HTTP 401 na Etapa 7 (`GET /api/projects: X-API-Key ou X-Session-Token obrigatório`):
+   - Extração completa de tokens JWT longos (`X-Session-Token` até 2500 chars) e chaves em UTF-16LE/UTF-8 do Chromium LevelDB do DarkPlanner Desktop + prioridade de cabeçalhos `X-Session-Token` / `Bearer` + recuperação automática graciosa na Etapa 7 sem abortar a montagem local.
+   - Limpeza canônica estrita de arquivos excedentes em `midias/` (elimina discrepâncias como `117 de 93`).
+4. Chat Inteligente na Mesma Conversa + `➕ Nova Conversa` + `🗑️ Excluir Projeto`:
+   - Ao responder ou corrigir erros pelo Chat, o sistema atua cirurgicamente na **mesma conversa** (`nova_conversa=False`), preservando roteiro, ponto de vista, narração MP3 e SRT já prontos (sem regerar tudo do zero!).
+   - Novo botão `➕ Nova Conversa` para iniciar sessão limpa apenas quando desejar.
+   - Novo botão `🗑️ Excluir Projeto` (e comando por texto no Chat) que apaga o projeto por completo do Chat, da Fila, do Histórico/Kanban, do DarkPlanner Desktop e do disco.
+5. Canal `Cappito Vital` Atualizado para o Padrão `CapittoFin` (`70% Vídeo / 30% Imagem`):
+   - `Cappito Vital` agora usa a mesma fórmula visual vibrante 2D cartoon de `CapittoFin`, distribuindo automaticamente **70% cenas em Vídeo (`[flow][iv][16:9]`)** e **30% cenas em Imagem (`[flow][i][16:9]`)**.
+6. Marcação `✅ Já Feito` na Sugestão do Dia 100% Persistente:
+   - Sincronizações com o DarkPlanner agora preservam `temas_concluidos_manual` no banco do servidor + espelho em `settings` + cache local (`fd_temas_feitos_v2`) com ressincronização automática ao abrir o app.
+7. Fila de Produção Vinculada 1:1 por Projeto (Sem Desconexão e Sem Reiniciar do Zero):
+   - O painel direito `Etapas (Passos 1 a 7) + Log em Tempo Real` agora fica vinculado individualmente a 1 projeto por vez (`#1`, `#2`, `#N`), mostrando exatamente a etapa atual de cada item (ex.: Etapa 6 no último item) ao clicar em `👁️ Ver Etapa` ou no seletor da fila, e desmarcando etapas já concluídas ao reabrir para nunca repetir do zero.
